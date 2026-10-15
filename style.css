@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f1f5f9;
+}
+
+/* Navigation Bar */
+header{
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 50px; /* 20px top/bottom, 50px left/right - THIS IS PADDING */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+nav a:hover {
+    color: #f0a70b;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: #05949e;
+    text-align: center;
+    padding: 80px 20px;
+    color:white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #018f88;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #104b98;
+}
+
+/* About Section */
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Courses Section */
+
+.courses {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.courses h2 {
+    margin-bottom: 30px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.course-card h3 {
+    color: #1769d2;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    margin-bottom: 20px;
+}
+
+.course-card a {
+    background-color: #1769d2;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.course-card a:hover {
+    background-color: #10983d;
+}
+
+.course-card:hover {
+    box-shadow: 0 5px 15px #cccccc;
+}
+
+/* Contact Section */
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 450px;
+    margin: 30px auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #1769d2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #104b98;
+}
+
+/* Footer */
+
+footer {
+    background-color: #142c52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+/* this is my css section */
+    .course-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
